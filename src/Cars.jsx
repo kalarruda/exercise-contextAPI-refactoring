@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import CarsContext from './context/CarsContext';
+import carsContext from './context/CarsContext';
 import carBlue from './images/carBlue.jpeg';
 import carRed from './images/carRed.jpeg';
 import carYellow from './images/carYellow.jpeg';
@@ -55,6 +55,6 @@ class Cars extends Component {
   }
 };
 
-Cars.contextType = CarsContext;
+Cars.contextType = carsContext;
 
 export default Cars;

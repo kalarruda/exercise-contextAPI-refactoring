@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import CarsContext from './CarsContext';
+import carsContext from './CarsContext';
 
 class Provider extends Component {
   constructor(props) {
@@ -34,9 +34,9 @@ class Provider extends Component {
     const { children } = this.props;
 
     return (
-      <CarsContext.Provider value={context}>
+      <carsContext.Provider value={context}>
         {children}
-      </CarsContext.Provider>
+      </carsContext.Provider>
     );
   }
 };
