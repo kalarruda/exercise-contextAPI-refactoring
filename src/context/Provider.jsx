@@ -10,9 +10,9 @@ class Provider extends React.Component {
         color: 'red'
       },
       cars: {
-        red: false,
-        blue: false,
-        yellow: false,
+        redCar: false,
+        blueCar: false,
+        yellowCar: false,
       },
     }
 
@@ -29,15 +29,25 @@ class Provider extends React.Component {
     });
   }
 
+  // moveCar = (car, move) => {
+  //   this.setState((state) => ({
+  //     ...state,
+  //     cars: {
+  //       ...this.state.cars, // this.state.cars
+  //       [car]: move,
+  //     }
+  //   }))
+  // }
+
   moveCar = (car, move) => {
-    this.setState((state) => ({
-      ...state,
+    this.setState({
       cars: {
         ...this.state.cars, // this.state.cars
         [car]: move,
       }
-    }))
+    })
   }
+
 
   render() {
     const context = {
